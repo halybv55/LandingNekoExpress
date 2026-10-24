@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Neko Express: un tren de gatitos, partidas cortas y nuevos desafíos. Conoce nuestra propuesta e inscríbete en la beta.">
+
+  <title>Neko Express · Próxima parada: diversión</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <!-- Ilustración reutilizable, incluida en el propio HTML -->
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg"
+       width="0" height="0" aria-hidden="true">
+    <defs>
+      <symbol id="neko-cat" viewBox="0 0 200 210">
+        <ellipse cx="100" cy="194" rx="65" ry="9"
+                 fill="#293d32" opacity=".12"/>
+
+        <path d="M146 154 Q187 124 175 99"
+              fill="none" stroke="currentColor"
+              stroke-width="17" stroke-linecap="round"/>
+
+        <rect x="46" y="110" width="108" height="77"
+              rx="36" fill="currentColor"/>
+
+        <path d="M43 82 L42 24 L79 46
+                 Q100 37 123 46 L160 24 L158 84
+                 Q168 139 100 142 Q33 138 43 82Z"
+              fill="currentColor"/>
+
+        <path d="M53 41 L56 73 L77 52Z
+                 M149 41 L145 73 L126 52Z"
+              fill="#eba594"/>
+
+        <ellipse cx="76" cy="89" rx="5" ry="7" fill="#293d32"/>
+        <ellipse cx="125" cy="89" rx="5" ry="7" fill="#293d32"/>
+
+        <ellipse cx="61" cy="105" rx="12" ry="7"
+                 fill="#e99b82" opacity=".65"/>
+        <ellipse cx="141" cy="105" rx="12" ry="7"
+                 fill="#e99b82" opacity=".65"/>
+
+        <path d="M94 103 L106 103 L100 110Z" fill="#925950"/>
+        <path d="M100 110 Q91 122 84 114
+                 M100 110 Q109 122 116 114"
+              fill="none" stroke="#293d32"
+              stroke-width="3" stroke-linecap="round"/>
+
+        <path d="M61 184 V166 M85 187 V168
+                 M119 187 V168 M143 183 V166"
+              fill="none" stroke="#293d32" stroke-opacity=".16"
+              stroke-width="3" stroke-linecap="round"/>
+
+        <path d="M72 140 Q100 152 130 140"
+              fill="none" stroke="#53754b" stroke-width="9"/>
+        <circle cx="101" cy="150" r="8" fill="#eac06f"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header>
+    <a class="brand" href="#" aria-label="Neko Express, inicio">
+       Neko Express
+    </a>
+
+    <nav aria-label="Principal">
+      <a href="#como">La propuesta</a>
+      <a href="#planes">Planes</a>
+      <a class="button small" href="#beta">Probar la beta ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="tag">TU PRÓXIMA PAUSA FAVORITA</span>
+
+        <h1>Tu descanso tiene<br><em>forma de gatito.</em></h1>
+
+        <p class="intro">
+          Reúne gatitos, haz crecer tu tren y supera tu récord.
+          Una aventura casual para desconectarte un ratito
+          y volver por una partida más.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#beta">¡Me subo a la beta! 🐾</a>
+          <a class="text-link" href="#como">Conocer la propuesta ↓</a>
+        </div>
+
+        <p class="fine">
+          Registro gratuito · Sin tarjeta · Acceso coordinado
+        </p>
+      </div>
+
+      <div class="art" role="img"
+           aria-label="Tres gatitos forman un pequeño tren">
+        <span class="art-tag">PRÓXIMA PARADA: DIVERSIÓN</span>
+        <span class="spark spark-one">✦</span>
+        <span class="spark spark-two">✧</span>
+
+        <div class="cat-train">
+          <svg class="cat cat-orange" aria-hidden="true">
+            <use href="#neko-cat"/>
+          </svg>
+          <svg class="cat cat-cream" aria-hidden="true">
+            <use href="#neko-cat"/>
+          </svg>
+          <svg class="cat cat-sage" aria-hidden="true">
+            <use href="#neko-cat"/>
+          </svg>
+        </div>
+
+        <div class="rail"></div>
+        <span class="art-note">Una partida más… 🐾</span>
+      </div>
+    </section>
+
+    <div class="ribbon">
+      <span> Fácil de aprender</span>
+      <span> Gatitos para coleccionar</span>
+      <span> Tu próxima meta</span>
+    </div>
+
+    <section id="como">
+      <div class="section-heading">
+        <span class="tag">UNA PAUSA CON PERSONALIDAD</span>
+        <h2>Una pausa pequeña.<br>Un tren enorme.</h2>
+        <p>
+          Neko Express es una propuesta de juego web casual inspirada
+          en el clásico gusanito. Aquí, cada compañero que recoges
+          hace crecer un adorable tren de gatitos.
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card sage">
+          <span class="story-icon"></span>
+          <span class="tag">¿PARA QUIÉN ES?</span>
+          <h3>Para quienes disfrutan los pequeños descansos.</h3>
+          <p>
+            Estudiantes y personas mayores de 18 años que buscan
+            entretenimiento casual, personajes adorables
+            y partidas cortas entre sus actividades.
+          </p>
+          <p>
+            No necesitas ser experto: la propuesta empieza con
+            controles sencillos y una dinámica fácil de comprender.
+          </p>
+        </article>
+
+        <article class="story-card peach">
+          <span class="story-icon"></span>
+          <span class="tag">¿QUÉ NECESIDAD ATENDEMOS?</span>
+          <h3>Divertirte sin dedicar una tarde entera.</h3>
+          <p>
+            Entre clases, tareas y responsabilidades, no siempre
+            hay tiempo para juegos con sesiones largas
+            o reglas complicadas.
+          </p>
+          <p>
+            Proponemos una experiencia breve y accesible,
+            con metas personales y opciones para personalizarla.
+            Durante la beta queremos comprobar si encaja
+            con tus momentos de descanso.
+          </p>
+        </article>
+      </div>
+
+      <div class="section-heading">
+        <span class="tag">MENOS VUELTAS, MÁS GATITOS</span>
+        <h2>¿Qué hace especial el viaje?</h2>
+      </div>
+
+      <div class="grid">
+        <article class="feature-card">
+          <div class="feature-image peach">
+            <svg class="feature-cat orange" role="img"
+                 aria-label="Gatito naranja">
+              <use href="#neko-cat"/>
+            </svg>
+            <span class="picture-star">✦</span>
+          </div>
+
+          <span class="tag">01 / JUEGA</span>
+          <h3>Empieza sin complicarte</h3>
+          <p>
+            Guía tu tren y recoge nuevos compañeros.
+            Una dinámica sencilla para disfrutar una partida
+            y poner a prueba tus reflejos.
+          </p>
+          <span class="pill"> Simplicidad</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-image sage">
+            <svg class="feature-cat green-cat" role="img"
+                 aria-label="Gatito verde salvia">
+              <use href="#neko-cat"/>
+            </svg>
+            <span class="picture-star">✧</span>
+          </div>
+
+          <span class="tag">02 / COLECCIONA</span>
+          <h3>Dale tu propio estilo</h3>
+          <p>
+            Nuestra propuesta incluye apariencias y recompensas
+            cosméticas. Personaliza tu tren sin comprar ventajas
+            en la puntuación.
+          </p>
+          <span class="pill"> Personalización</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-image rose">
+            <svg class="feature-cat pink-cat" role="img"
+                 aria-label="Gatito rosado">
+              <use href="#neko-cat"/>
+            </svg>
+            <span class="picture-star">✦</span>
+          </div>
+
+          <span class="tag">03 / AVANZA</span>
+          <h3>Encuentra una nueva meta</h3>
+          <p>
+            Supera tu récord y descubre la propuesta
+            de temporadas, niveles y recompensas.
+            Siempre habrá algo nuevo que intentar.
+          </p>
+          <span class="pill"> Progreso personal</span>
+        </article>
+      </div>
+
+      <div class="offer-banner">
+        <div>
+          <span class="tag">LO QUE OFRECEMOS</span>
+          <h3>Tu aventura, a tu manera.</h3>
+          <p>
+            Acceso básico gratuito y opciones independientes
+            para eliminar anuncios, desbloquear recompensas
+            de temporada o acceder a nuevos desafíos.
+          </p>
+        </div>
+        <a class="button" href="#planes">Ver opciones ↗</a>
+      </div>
+    </section>
+
+    <section id="planes">
+      <div class="section-heading">
+        <span class="tag">ELIGE TU PRÓXIMA ESTACIÓN</span>
+        <h2>Primero prueba.<br>Después decide.</h2>
+        <p>
+          Precios para la actividad académica en créditos simulados.
+          No utilizamos dinero real ni realizamos cobros automáticos.
+        </p>
+      </div>
+
+      <div class="free-banner">
+        <div>
+          <h3> Explorador · Bs 0</h3>
+          <p>
+            Beta gratuita para conocer el juego básico
+            y participar en las pruebas coordinadas.
+          </p>
+        </div>
+        <a class="button secondary" href="#beta"
+           data-interest="Beta gratuita">Empezar gratis</a>
+      </div>
+
+      <div class="plans">
+        <article>
+          <span class="tag">COMPRA ÚNICA</span>
+          <h3> Sin anuncios</h3>
+          <p class="price">Bs 20</p>
+          <p class="duration">Beneficio permanente</p>
+
+          <ul>
+            <li>Elimina los anuncios de tu cuenta.</li>
+            <li>Un solo pago, sin vencimiento.</li>
+            <li>No incluye el pase ni Neko Club.</li>
+          </ul>
+
+          <p class="fine">Función propuesta, pendiente de implementación.</p>
+          <a class="button secondary" href="#beta">
+            Consultar disponibilidad
+          </a>
+        </article>
+
+        <article class="featured">
+          <span class="tag">COMPRA POR TEMPORADA</span>
+          <h3> Neko Pass</h3>
+          <p class="price">Bs 25</p>
+          <p class="duration">Temporada de 30 días</p>
+
+          <ul>
+            <li>Acceso a la ruta premium de recompensas.</li>
+            <li>Obtén cosméticos al avanzar y reclamarlos.</li>
+            <li>Conserva los objetos que hayas obtenido.</li>
+          </ul>
+
+          <p class="fine">
+            Las fechas comunes de la temporada se confirman
+            antes de comprar. No incluye eliminar anuncios.
+          </p>
+
+          <a class="button" href="#beta" data-interest="Neko Pass">
+            Me interesa el pase
+          </a>
+        </article>
+
+        <article>
+          <span class="tag">SUSCRIPCIÓN TEMPORAL</span>
+          <h3> Neko Club</h3>
+          <p class="price">Bs 20 <small>/ 30 días</small></p>
+          <p class="duration">90 días: Bs 50 · 180 días: Bs 90</p>
+
+          <ul>
+            <li>Acceso propuesto al modo Infinito.</li>
+            <li>Modo Desafío con mayor dificultad.</li>
+            <li>Beneficios durante la vigencia del plan.</li>
+          </ul>
+
+          <p class="fine">
+            Consulta el estado de implementación de sus modos
+            antes de adquirirlo.
+          </p>
+          <a class="button secondary" href="#beta">
+            Consultar disponibilidad
+          </a>
+        </article>
+      </div>
+
+      <p class="notice">
+        <strong>Beta en desarrollo.</strong>
+        La demostración del juego y los servicios .NET se prueban
+        por separado. Las compras independientes y los anuncios
+        son funciones propuestas. Confirma el alcance disponible
+        antes de adquirir una opción. Este formulario registra
+        interés: no compra planes ni asigna un tenant.
+      </p>
+    </section>
+
+    <section class="steps-section">
+      <span class="tag">ASÍ EMPIEZA TU VIAJE</span>
+      <h2>De tu registro a la primera prueba.</h2>
+
+      <div class="grid steps-grid">
+        <article>
+          <span class="step-number">01</span>
+          <h3>Inscríbete</h3>
+          <p>
+            Completa el formulario e indica
+            lo que te gustaría conocer.
+          </p>
+        </article>
+
+        <article>
+          <span class="step-number">02</span>
+          <h3>Coordinamos contigo</h3>
+          <p>
+            Te enviaremos por privado el tenantId,
+            las instrucciones, el enlace de prueba
+            y el horario acordado.
+          </p>
+        </article>
+
+        <article>
+          <span class="step-number">03</span>
+          <h3>Prueba y comparte</h3>
+          <p>
+            Explora las funciones disponibles
+            y cuéntanos qué disfrutaste y qué mejorarías.
+          </p>
+        </article>
+      </div>
+
+      <p class="fine">
+        El acceso al backend requiere que los servidores locales
+        estén encendidos durante el horario coordinado.
+      </p>
+    </section>
+
+    <section id="beta" class="signup">
+      <div>
+        <span class="tag">HAY UN LUGAR PARA TI</span>
+        <h2>La próxima estación<br>empieza contigo.</h2>
+        <p>
+          Buscamos personas mayores de 18 años que disfruten
+          los juegos casuales. Usaremos tu correo únicamente
+          para coordinar esta beta y solicitar feedback.
+        </p>
+
+        <svg class="signup-cat orange" aria-hidden="true">
+          <use href="#neko-cat"/>
+        </svg>
+
+        <p id="connection" class="notice"></p>
+      </div>
+
+      <form id="betaForm">
+        <h3>Tu boleto a la beta 🐾</h3>
+        <p class="fine">Los campos con * son obligatorios.</p>
+
+        <label for="nombre">Nombre o alias *</label>
+        <input id="nombre" name="nombre" required
+               minlength="2" maxlength="80" autocomplete="nickname">
+
+        <label for="correo">Correo *</label>
+        <input id="correo" name="correo" type="email"
+               required maxlength="160" autocomplete="email">
+
+        <label for="perfil">¿Cómo te describes? *</label>
+        <select id="perfil" required>
+          <option value="">Selecciona una opción</option>
+          <option>Estudiante</option>
+          <option>Jugador casual</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="organizacion">Institución o comunidad (opcional)</label>
+        <input id="organizacion" maxlength="100">
+
+        <fieldset>
+          <legend>¿Qué buscas? Elige al menos una opción *</legend>
+
+          <label class="check">
+            <input type="checkbox" name="necesidad"
+                   value="Descansar unos minutos">
+            Descansar unos minutos
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="necesidad"
+                   value="Coleccionar gatitos">
+            Coleccionar gatitos
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="necesidad"
+                   value="Superar mi puntuación">
+            Superar mi puntuación
+          </label>
+        </fieldset>
+
+        <label for="interes">¿Qué quieres probar? *</label>
+        <select id="interes" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Beta gratuita">Beta gratuita</option>
+          <option value="Neko Pass">Neko Pass</option>
+          <option value="Ambos">Beta gratuita y Neko Pass</option>
+        </select>
+
+        <label for="comentario">Cuéntanos más (opcional)</label>
+        <p class="field-help" id="comentario-help">
+          ¿Qué mejorarías en otros juegos? Si te interesa
+          Sin anuncios o Neko Club, indícalo aquí.
+        </p>
+        <textarea id="comentario" maxlength="600" rows="3"
+                  aria-describedby="comentario-help"></textarea>
+
+        <label class="check">
+          <input id="adulto" type="checkbox" required>
+          Confirmo que tengo al menos 18 años. *
+        </label>
+
+        <label class="check">
+          <input id="consentimiento" type="checkbox" required>
+          Acepto el aviso de privacidad y el contacto para esta beta. *
+        </label>
+
+        <label class="trap" aria-hidden="true">
+          Sitio web
+          <input id="website" tabindex="-1" autocomplete="off">
+        </label>
+
+        <button id="send" class="button" type="submit">
+          Solicitar acceso a la beta
+        </button>
+
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"> Neko Express</a>
+    <p>Proyecto académico · Bolivia · 2026</p>
+    <button type="button" data-dialog="privacy">Privacidad</button>
+    <button type="button" data-dialog="terms">Condiciones</button>
+  </footer>
+
+  <dialog id="privacy" aria-labelledby="privacy-title">
+    <h2 id="privacy-title">Aviso de privacidad</h2>
+    <p>
+      Guardamos nombre o alias, correo, perfil, institución opcional,
+      necesidades, interés, comentario, consentimiento y fecha
+      en Supabase. La finalidad es coordinar la beta académica
+      y recoger feedback. No publicamos ni vendemos tus datos.
+    </p>
+    <p>
+      El acceso se limita al responsable y sus proveedores técnicos.
+      Conservación propuesta: hasta 90 días después de finalizar
+      la beta; el responsable debe ejecutar la eliminación.
+      Puedes solicitar acceso, corrección o eliminación
+      mediante el contacto indicado.
+    </p>
+    <p>No envíes contraseñas ni información sensible.</p>
+    <p class="contact"></p>
+    <button type="button" class="button close">Entendido</button>
+  </dialog>
+
+  <dialog id="terms" aria-labelledby="terms-title">
+    <h2 id="terms-title">Condiciones de la beta</h2>
+    <p>
+      Participación voluntaria para mayores de 18 años.
+      Prototipo educativo sujeto a cambios y disponibilidad.
+      Registrarte expresa interés: no compra un plan,
+      no crea una cuenta de juego ni garantiza acceso inmediato.
+    </p>
+    <p>
+      Precios en créditos simulados: Sin anuncios Bs 20,
+      pago único; Neko Pass Bs 25 por temporada de 30 días;
+      Neko Club Bs 20, Bs 50 o Bs 90 por 30, 90 o 180 días.
+      No hay cobros reales ni renovaciones automáticas.
+    </p>
+    <p>
+      La temporada tiene fechas comunes, que se informarán
+      antes de comprar. Los beneficios deben comprobarse
+      durante la prueba coordinada. Las funciones propuestas
+      pueden no estar implementadas todavía.
+    </p>
+    <p>
+      No publiques datos personales ni tenantId en el foro.
+      El tenantId identifica el entorno de prueba;
+      no sustituye un inicio de sesión seguro.
+    </p>
+    <p class="contact"></p>
+    <button type="button" class="button close">Entendido</button>
+  </dialog>
+</body>
+</html>
