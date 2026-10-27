@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Atender inscripciones · Neko Express</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="atender.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="brand" href="index.html">🐈 Neko Express</a>
+
+      <nav aria-label="Principal">
+        <a href="index.html">Volver a la landing</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="signup">
+        <div>
+          <span class="tag">ADMINISTRACIÓN DE LA BETA</span>
+
+          <h1>Atender una inscripción</h1>
+
+          <p>
+            Ingresa el correo de la persona inscrita y la clave de
+            administración para cambiar su estado a Atendida.
+          </p>
+
+          <p class="notice">
+            Solo se modificará una inscripción si existe exactamente
+            una coincidencia y su estado actual es Inscrita.
+          </p>
+        </div>
+
+        <form id="atenderForm">
+          <label for="correoAtender">Correo de la persona *</label>
+          <input
+            id="correoAtender"
+            type="email"
+            maxlength="160"
+            required
+          />
+
+          <label for="claveAdmin">Clave de administración *</label>
+          <input
+            id="claveAdmin"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+
+          <button id="botonAtender" class="button" type="submit">
+            Marcar como atendida
+          </button>
+
+          <p id="resultadoAtender" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <b>🐈 Neko Express</b>
+      <p>Proyecto académico · Administración de la beta</p>
+    </footer>
+  </body>
+</html>
