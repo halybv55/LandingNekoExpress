@@ -63,11 +63,11 @@ module.exports = async function handler(req, res) {
       `${supabaseUrl.replace(/\/$/, "")}/rest/v1/rpc/atender_inscripcion`,
       {
         method: "POST",
+        
         headers: {
-          apikey: supabaseSecretKey,
-          Authorization: `Bearer ${supabaseSecretKey}`,
-          "Content-Type": "application/json",
-        },
+  apikey: supabaseSecretKey,
+  "Content-Type": "application/json",
+},
         body: JSON.stringify({
           correo_buscado: correo,
         }),
